@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <body style="background-color: #212121; color: white;">
+        
+    </body>
+    <script>
+       const div = document.createElement('div')
+    //    console.log(div);
+       div.className = "main"
+       div.id = Math.round(Math.random() *10 +1)
+
+       div.setAttribute("title", "genreated title")
+       div.style.backgroundColor = "green"
+       div.style.padding = "12px"
+    //    div.innerHTML = "chai or code"
+     const addText =  document.createTextNode("chai or code")
+     div.appendChild(addText)
+
+     document.body.appendChild(div)
+
+     
+
+    </script>
+</body>
+</html>
